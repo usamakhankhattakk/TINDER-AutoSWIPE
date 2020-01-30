@@ -23,8 +23,8 @@ if (k<likes)
 {
 
 like();
-//checking after every 6 sec
-setTimeout(check,12000);
+//checking after every 3 sec
+setTimeout(check,5000);
 
 }
 };
@@ -41,7 +41,7 @@ setTimeout(check,12000);
     task(i);
    };
   function task(i){
-    setTimeout(liked,3000*i);
+    setTimeout(liked,1000*i);
     };
     
 };
