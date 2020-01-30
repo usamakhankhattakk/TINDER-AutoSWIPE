@@ -11,8 +11,9 @@ var likes= 5;
  function liked(){
     if (confirmBox){
       document.querySelector('[aria-label="Like"]').click();
-      console.log('Liked ' + count);						  count++;
-    k++;												};
+      console.log('Liked ' + count);						  
+      count++;
+      k++;												};
     
 };
 
