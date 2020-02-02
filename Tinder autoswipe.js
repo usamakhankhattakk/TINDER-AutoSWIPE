@@ -34,7 +34,7 @@ setTimeout(check,5000);
 
 
 
-//like 3 users with every 3 sec difference between them
+//like 3 users with every 1 sec difference between them
  function like(){
    let i;
     for ( i = 0; i <3; i++){
