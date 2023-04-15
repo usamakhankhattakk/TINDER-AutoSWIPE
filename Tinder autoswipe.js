@@ -1,8 +1,8 @@
 var count = 1;
 var k = 0;
 
-const likes = prompt('How many likes do you want?(in digits not more than 100)');
-if (likes <= 0 || likes > 100) {
+const likes = prompt('How many likes do you want?(in digits not more than 99 and in multiple of 3)');
+if (likes <= 0 || likes > 100 || likes % 3 === 1) {
   console.log('invalid number');
 } else {
 
@@ -16,7 +16,7 @@ if (likes <= 0 || likes > 100) {
 
 //checking to like users 
 function check() {
-  const likebutton = document.querySelector('[aria-label="Like"]');
+  const likebutton = document.querySelector("button.button.Lts\\(\\$ls\\-s\\).Z\\(0\\).CenterAlign.Mx\\(a\\).Cur\\(p\\).Tt\\(u\\).Bdrs\\(50\\%\\).P\\(0\\).Fw\\(\\$semibold\\).focus\\-button\\-style.Bxsh\\(\\$bxsh\\-btn\\).Expand.Trstf\\(e\\).Trsdu\\(\\$normal\\).Wc\\(\\$transform\\).Pe\\(a\\).Scale\\(1\\.1\\)\\:h.Scale\\(\\.9\\)\\:a.Bgi\\(\\$g\\-ds\\-background\\-like\\)\\:a");
   if (!confirmBox) {
     console.log('Swiping cancelled.');
   } else if (!likebutton) {
