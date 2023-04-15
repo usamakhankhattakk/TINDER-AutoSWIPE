@@ -1,11 +1,18 @@
-var confirmBox = confirm('Start swiping right?');
 var count = 1;
 var k = 0;
-//input how many likes you want
-var likes = 5;
 
-//intialiation function to run swiping
-check();
+const likes = prompt('How many likes do you want?(in digits not more than 100)');
+if (likes <= 0 || likes > 100) {
+  console.log('invalid number');
+} else {
+
+  var confirmBox = confirm('Start swiping right?');
+  //intialiation function to run swiping
+  check();
+}
+
+
+
 
 //checking to like users 
 function check() {
